@@ -13,9 +13,10 @@ document.onscroll =() => {
             };
             return true;
         };
-        
+
         if (IsVisible(r)) {
-            r.className += " reveal_active"
-        };
+            r.className = "reveal reveal_active"
+        } else {r.className = "reveal"};
+
     });
 };
